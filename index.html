@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Danser Group em Santarém (PA): proposta de entrada no Brasil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3FAEC;--tint:#E3F4D4;--surface:#FFFFFF;--ink:#0E2E1B;--muted:#43614B;--line:#BFE0A8;--river:#0A8F55;--lake:#17B1BE;--deep:#07472B;--sun:#FFC21A;--on-deep:#F0FAE8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1F14;--tint:#0F2A1B;--surface:#13301F;--ink:#E8F5DE;--muted:#A5C4A8;--line:#27502F;--river:#4FD98F;--lake:#3CC9D6;--deep:#052E1A;--sun:#FFC21A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A1F14;--tint:#0F2A1B;--surface:#13301F;--ink:#E8F5DE;--muted:#A5C4A8;--line:#27502F;--river:#4FD98F;--lake:#3CC9D6;--deep:#052E1A;--sun:#FFC21A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;counter-reset:cap;background:linear-gradient(180deg,var(--bg),var(--tint) 18%,var(--bg) 38%,var(--tint) 62%,var(--bg) 85%);color:var(--ink);font:17px/1.65 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.8rem,4vw,2.5rem)}h3{font-size:1.3rem}
+p{max-width:68ch;margin:0 0 1em}
+a{color:var(--river)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:clamp(64px,10vw,116px) 0;position:relative;border:0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--deep);color:var(--on-deep)}
+nav .wrap{display:flex;gap:20px;align-items:center;overflow-x:auto;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav a{color:var(--on-deep);text-decoration:none;font-size:.92rem;opacity:.85}nav a:hover{opacity:1;text-decoration:underline}
+nav b{font-family:"Newsreader",Georgia,serif;margin-right:auto;font-size:1.1rem}
+.hero{background:radial-gradient(120% 90% at 85% 0%,#0E8A4F 0%,var(--deep) 60%);color:var(--on-deep);padding:80px 0 56px;border:0;position:relative;overflow:hidden}
+.hero .wrap{position:relative}
+/* IMAGEM DE FUNDO: troque none por url("data:image/jpeg;base64,...") para fixar uma foto na abertura */
+.hero{--hero-img:none}
+.hero::before{content:"";position:absolute;inset:0;background:var(--hero-img) center/cover no-repeat;opacity:.4;pointer-events:none}
+.bgbtn{margin-left:12px;font:inherit;background:transparent;color:var(--on-deep);border:2px solid var(--on-deep);padding:10px 18px;border-radius:6px;cursor:pointer}
+.barge{animation:navega 14s ease-in-out infinite alternate}
+@keyframes navega{from{transform:translateX(-60px)}to{transform:translateX(60px)}}
+@media(prefers-reduced-motion:reduce){.barge{animation:none}}
+.fronds{position:absolute;right:0;top:0;width:min(44vw,380px);pointer-events:none;opacity:.9}
+@media(max-width:700px){.fronds{opacity:.3}}
+.hero h1{font-size:clamp(2.3rem,6.5vw,4.6rem);max-width:15ch;margin-bottom:.4em}
+.hero p{font-size:1.15rem;color:#D6F0C8}
+.hero svg{width:100%;height:auto;margin-top:36px;display:block}
+.cta{display:inline-block;background:var(--sun);color:#10272A;font-weight:600;padding:12px 22px;border-radius:6px;text-decoration:none}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.box{background:none;border:0;border-left:3px solid var(--river);border-radius:0;padding:4px 0 4px 20px}
+.box h3{margin-bottom:.3em}.box p{margin:0;color:var(--muted)}
+.fact{border-left:4px solid var(--sun);padding-left:16px;margin:0 0 20px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--surface)}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{width:32%;color:var(--muted);font-weight:500}
+.diamond{display:grid;gap:24px;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:start}
+@media(max-width:760px){.diamond{grid-template-columns:1fr}}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tabs button{font:inherit;text-align:left;padding:12px 16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--river);color:#fff;border-color:var(--river)}
+#painel{min-height:190px}
+.oli{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.oli div{padding:24px;border-right:1px solid var(--line)}.oli div:last-child{border:0}
+.oli h3{color:var(--river)}
+.video{background:var(--deep);border-radius:12px;aspect-ratio:16/9;display:grid;place-items:center;overflow:hidden;color:var(--on-deep);text-align:center}
+.video video,.video iframe{width:100%;height:100%;border:0;background:#000}
+.video label{cursor:pointer;display:inline-block;margin-top:12px;padding:10px 18px;background:var(--sun);color:#10272A;border-radius:6px;font-weight:600}
+.video input{position:absolute;opacity:0;pointer-events:none}
+.video input:focus-visible+label{outline:3px solid #fff;outline-offset:3px}
+section.rec,section.rec:nth-of-type(even){background:var(--deep);color:var(--on-deep);border:0}
+.rec h2{color:#fff}.rec ol{font-size:1.08rem;color:#F0FAE8}.rec li::marker{color:var(--sun);font-weight:700}
+.rec p{color:#D6F0C8}.rec h2{color:#fff}
+.rec ol{max-width:68ch;padding-left:1.2em}.rec li{margin-bottom:.6em}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--river);margin-bottom:6px}
+.nota{font-size:.88rem;color:var(--muted)}
+#prog{position:fixed;top:0;left:0;right:0;height:4px;z-index:20;background:linear-gradient(90deg,var(--river),var(--sun),var(--lake));transform:scaleX(0);transform-origin:0 50%}
+nav a{transition:color .2s}nav a.on{color:var(--sun);opacity:1;text-decoration:underline;text-underline-offset:6px}
+@keyframes surge{from{opacity:0;transform:translateY(18px)}}
+.hero h1{animation:surge .9s both}.hero p{animation:surge .9s .15s both}.hero .cta,.bgbtn{animation:surge .9s .3s both}
+.fronds{transform-origin:100% 0;animation:sway 8s ease-in-out infinite alternate}@keyframes sway{to{transform:rotate(-4deg)}}
+.w1{animation:onda 5s ease-in-out infinite alternate}.w2{animation:onda 7s ease-in-out infinite alternate-reverse}@keyframes onda{to{transform:translateY(7px)}}
+.leaf{position:absolute;top:-30px;border-radius:0 100% 0 100%;opacity:.8;pointer-events:none;animation:cai linear infinite}
+@keyframes cai{to{transform:translate(70px,560px) rotate(320deg);opacity:0}}
+.stats{background:var(--sun);color:#0E2E1B}
+.stats .grid4{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));padding:28px 24px}
+.stats b{display:block;font:600 clamp(2rem,5vw,2.8rem)/1.1 "Newsreader",Georgia,serif}.stats span{font-size:.92rem}
+h2::after{content:"";display:block;width:64px;height:5px;border-radius:3px;margin-top:12px;background:linear-gradient(90deg,var(--river),var(--sun))}
+.box{transition:transform .3s,box-shadow .3s}.box:hover{transform:translateY(-6px);box-shadow:0 16px 30px -14px rgba(7,71,43,.4)}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--d,0s),transform .7s var(--d,0s),box-shadow .3s}
+.js .rv.in{opacity:1;transform:none}.js .box.rv.in:hover{transform:translateY(-6px)}
+.nd{cursor:pointer;outline:none}.nd rect{fill:var(--surface);stroke:var(--line);stroke-width:2;transition:fill .3s,stroke .3s}
+.nd text{fill:var(--ink);font:600 12.5px "Instrument Sans",sans-serif;text-anchor:middle;pointer-events:none}
+.nd:hover rect,.nd:focus-visible rect{stroke:var(--river)}.nd[aria-selected="true"] rect{fill:var(--river);stroke:var(--sun)}.nd[aria-selected="true"] text{fill:#fff}
+.dl{stroke:var(--river);stroke-width:2;stroke-dasharray:6 8;opacity:.7;animation:fluxo 1.6s linear infinite}@keyframes fluxo{to{stroke-dashoffset:-28}}
+#tabs svg{width:100%;height:auto;display:block}
+#painel>*{animation:surge .4s both}
+.road{list-style:none;margin:0;padding:0 0 0 40px;position:relative;max-width:720px}
+.road::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:4px;border-radius:2px;background:linear-gradient(var(--river),var(--lake))}
+.road li{position:relative;margin-bottom:28px}.road li:last-child{margin:0}
+.road li::before{content:"";position:absolute;left:-40px;top:4px;width:26px;height:26px;border-radius:50%;background:var(--sun);border:4px solid var(--bg);box-shadow:0 0 0 3px var(--river)}
+.road h3{margin-bottom:.2em}.road p{margin:0;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.leaf{display:none}}
+.slot{margin:0;position:relative}
+.slot input{position:absolute;opacity:0;pointer-events:none}
+.slot label{display:grid;place-items:center;aspect-ratio:4/3;border:2px dashed var(--river);border-radius:12px;background:var(--surface) center/cover no-repeat;color:var(--river);font-weight:600;cursor:pointer}
+.slot label.tem{border-style:solid}
+.slot input:focus-visible+label{outline:3px solid var(--sun);outline-offset:3px}
+.slot figcaption{margin-top:8px;font-size:.95rem;color:var(--muted)}
+footer{background:var(--deep);color:var(--on-deep);border-top:6px solid var(--sun);padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:.95rem}
+.fgrid{display:grid;gap:24px 56px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+footer p{margin:0;max-width:none;color:#D6F0C8}
+footer strong{color:#fff;font-family:"Newsreader",Georgia,serif;font-size:1.2rem;font-weight:600}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* fluidez: sem blocos, ondas entre as partes, rio que acompanha a leitura */
+nav{background:color-mix(in srgb,var(--deep) 85%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hero{padding-bottom:130px}
+.hero::after,.rec::before{content:"";position:absolute;left:0;right:0;height:80px;-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80' preserveAspectRatio='none'><path d='M0 40C200 0 400 80 600 40S1000 0 1200 40V80H0Z'/></svg>") center/100% 100% no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80' preserveAspectRatio='none'><path d='M0 40C200 0 400 80 600 40S1000 0 1200 40V80H0Z'/></svg>") center/100% 100% no-repeat;pointer-events:none}
+.hero::after{bottom:-1px;background:var(--bg)}
+.rec{margin-top:90px}.rec::before{top:-79px;background:var(--deep)}
+.stats{background:none;color:var(--ink);position:relative;z-index:2;margin-top:-72px}
+.stats .grid4{background:var(--surface);border-radius:24px;box-shadow:0 26px 50px -28px rgba(7,71,43,.55);width:calc(100% - 32px);padding:28px 32px}
+.stats b{color:var(--river)}.stats span{color:var(--muted)}
+h2::before{counter-increment:cap;content:"0" counter(cap) " \2014";display:block;font:600 .9rem "Instrument Sans",sans-serif;letter-spacing:.16em;color:var(--river);margin-bottom:10px}
+.rec h2::before{color:var(--sun)}
+.grid{gap:36px 44px}
+.box:hover{box-shadow:none}
+.oli{background:none;border:0;border-radius:0;gap:32px}
+.oli div,.oli div:last-child{border:0;border-top:3px solid var(--river);padding:18px 0 0}
+#painel{background:var(--surface);border:0;border-radius:24px;padding:30px;box-shadow:0 24px 44px -26px rgba(7,71,43,.5)}
+table{background:none}
+.video{border-radius:28px;box-shadow:0 34px 60px -30px rgba(7,71,43,.6)}
+#rio{display:none}
+@media(min-width:1180px){#rio{display:block;position:fixed;left:18px;top:14vh;bottom:14vh;width:4px;border-radius:2px;background:var(--line);z-index:4}
+#rio i{position:absolute;left:0;right:0;top:0;height:0;border-radius:2px;background:linear-gradient(var(--river),var(--lake))}
+#rio b{position:absolute;left:-10px;top:0;width:24px;height:24px;margin-top:-12px;border-radius:50%;background:var(--sun);border:4px solid var(--bg);box-shadow:0 0 0 3px var(--river)}}
+</style>
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+<div id="prog"></div>
+<div id="rio" aria-hidden="true"><i></i><b></b></div>
+<nav><div class="wrap"><b>Danser Group · Brasil</b>
+<a href="#brasil">Brasil</a><a href="#cidade">Santarém</a><a href="#regiao">Desenvolvimento</a><a href="#setor">Setor</a><a href="#concorrencia">Concorrência</a><a href="#porter">Diamante de Porter</a><a href="#eclectico">Paradigma Eclético</a><a href="#proposta">Proposta</a><a href="#imagens">Imagens</a><a href="#video">Entrevista</a><a href="#roteiro">Roteiro</a><a href="#recomendacao">Recomendação</a></div></nav>
+
+<header class="hero"><svg class="fronds" viewBox="0 0 300 300" aria-hidden="true"><g transform="translate(300 0)"><path fill="#0A8F55" transform="rotate(92)" d="M0 0C40-45 140-55 230-10 150-5 70 20 0 0Z"/><path fill="#7BD43A" transform="rotate(115)" d="M0 0C40-45 140-55 250-10 150-5 70 20 0 0Z"/><path fill="#12B36B" transform="rotate(138)" d="M0 0C40-45 140-55 260-10 150-5 70 20 0 0Z"/><path fill="#4DBB2E" transform="rotate(160)" d="M0 0C40-45 140-55 240-10 150-5 70 20 0 0Z"/><path fill="#0A8F55" transform="rotate(180)" d="M0 0C40-45 140-55 220-10 150-5 70 20 0 0Z"/></g></svg><div class="wrap">
+<h1>Levar a hidrovia europeia ao coração da Amazônia</h1>
+<p>Apresentação ao Conselho e à Diretoria da Danser Group: por que Santarém (PA) é o ponto de entrada mais promissor para a primeira operação fluvial de contêineres da empresa no Brasil.</p>
+<svg viewBox="0 0 900 150" role="img" aria-label="Rota proposta: Santarém, Manaus e Belém ao longo do Rio Amazonas">
+<path class="w1" d="M0 100C150 60 250 140 450 100S750 60 900 100V150H0Z" fill="#17B1BE" opacity=".28"/><path class="w2" d="M0 120C150 90 300 150 450 118S760 90 900 122V150H0Z" fill="#17B1BE" opacity=".4"/><path d="M70 95 C230 40 330 140 450 85 S720 40 830 90" fill="none" stroke="#FFC21A" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 12"/>
+<g fill="#FFC21A"><circle cx="70" cy="95" r="10"/><circle cx="450" cy="85" r="14"/><circle cx="830" cy="90" r="10"/></g>
+<g class="barge"><g transform="translate(160 86)"><rect x="0" y="0" width="22" height="14" fill="#E8553D"/><rect x="23" y="0" width="22" height="14" fill="#17B1BE"/><rect x="46" y="0" width="22" height="14" fill="#FFC21A"/><rect x="69" y="0" width="22" height="14" fill="#F0FAE8"/><rect x="92" y="0" width="22" height="14" fill="#7BD43A"/><rect x="115" y="0" width="22" height="14" fill="#E8553D"/><rect x="12" y="-15" width="22" height="14" fill="#FFC21A"/><rect x="35" y="-15" width="22" height="14" fill="#E8553D"/><rect x="58" y="-15" width="22" height="14" fill="#17B1BE"/><rect x="81" y="-15" width="22" height="14" fill="#F0FAE8"/><path d="M-8 14H146L136 28H2Z" fill="#052E1A" stroke="#F0FAE8" stroke-width="2"/><rect x="-24" y="-2" width="18" height="16" fill="#F0FAE8"/><rect x="-20" y="2" width="10" height="5" fill="#07472B"/><path d="M-30 31q20 6 40 0t40 0 40 0 40 0" fill="none" stroke="#F0FAE8" stroke-width="2" opacity=".6"/></g></g>
+<g fill="#F0FAE8" font-family="Instrument Sans,sans-serif" font-size="17"><text x="70" y="130" text-anchor="middle">Manaus</text><text x="450" y="60" text-anchor="middle" font-weight="600">Santarém · terminal fluvial</text><text x="830" y="125" text-anchor="middle">Belém</text></g>
+</svg></div></header>
+<div class="stats"><div class="wrap grid4">
+<div><b data-n="331942">331.942</b><span>habitantes em Santarém (Censo 2022)</span></div>
+<div><b data-n="6992">6.992</b><span>km de carga no Rio Amazonas</span></div>
+<div><b data-n="2080">2.080</b><span>km de carga no Rio Tapajós</span></div>
+<div><b data-n="1982" data-y="1">1982</b><span>ano em que a Danser começou a operar</span></div>
+</div></div>
+
+<section id="brasil"><div class="wrap">
+<h2>O Brasil que a Danser vai encontrar</h2>
+<p>Seis fatores do cenário nacional que pesam sobre uma operação fluvial de contêineres e cargas.</p>
+<div class="grid">
+<div class="box"><span class="tag">Político</span><h3>Hidrovia em pauta, com idas e vindas</h3><p>O governo federal estuda concessões para ampliar a navegação interior, hoje com 5% das cargas do país, para ao menos 8% até 2035. Após protestos em Santarém, porém, o Executivo revogou o decreto que incluía as hidrovias amazônicas no programa de desestatização. O sinal é de prioridade política com instabilidade.</p></div>
+<div class="box"><span class="tag">Econômico</span><h3>Commodities pedem escoamento</h3><p>O Brasil é grande exportador de grãos, e o corredor do Tapajós, ligado ao fim do trecho pavimentado da BR-163, já movimenta dezenas de milhões de toneladas, segundo reportagens recentes. A oscilação cambial entra como risco, como no Diamante de Porter.</p></div>
+<div class="box"><span class="tag">Social</span><h3>Território com povos e comunidades</h3><p>Santarém tem a segunda maior população indígena do Pará (10.602 pessoas, Censo 2022). Povos como os Tupinambá ocuparam o Tapajós para barrar barcaças de soja. Diálogo e consulta às comunidades fazem parte da operação.</p></div>
+<div class="box"><span class="tag">Tecnológico</span><h3>Dados como diferencial</h3><p>Planejamento logístico, rastreamento de cargas e coordenação de rotas são o ponto forte da Danser e respondem à exigência de rastreabilidade dos compradores. No município, o licenciamento digital reduz o atrito para abrir a operação.</p></div>
+<div class="box"><span class="tag">Legal</span><h3>Regulação em transformação</h3><p>A Lei 14.301/2022 (BR do Mar) flexibilizou o afretamento de embarcações estrangeiras na cabotagem. A Antaq inclui na agenda 2025-2028 a simplificação das normas da navegação interior e novos critérios de outorga para Empresas Brasileiras de Navegação, o que reforça a joint venture com parceiro brasileiro. Também há a Taxa de Seca, que exige aviso prévio.</p></div>
+<div class="box"><span class="tag">Ambiental</span><h3>Seca e licença social</h3><p>Na seca de 2023-2024, cerca de 90% das embarcações no Amazonas operaram com restrições. Dragagem e ampliação da hidrovia são contestadas por povos indígenas. A operação precisa de calado variável, planejamento sazonal e baixo impacto.</p></div>
+</div></div></section>
+
+<section id="cidade"><div class="wrap">
+<h2>Santarém: uma cidade que facilita abrir empresas</h2>
+<p>No Índice de Cidades Empreendedoras de 2023, Santarém é a segunda melhor cidade do Pará para empreender e ocupa a 40ª posição no ranking nacional. Os destaques são Ambiente Regulatório e Cultura Empreendedora.</p>
+<div class="grid">
+<div class="box"><h3>Burocracia reduzida</h3><p>O município oferece licenciamento digital de atividades e a Sala do Empreendedor, que apoia a emissão de alvarás, a abertura e a regularização de empresas.</p></div>
+<div class="box"><h3>Economia de serviços</h3><p>Forte participação do setor de serviços, com espaço para comércio, prestação de serviços e uso sustentável dos recursos regionais.</p></div>
+<div class="box"><h3>Ponto de atenção</h3><p>A cidade está menos bem posicionada no Ranking de Competitividade dos Municípios, embora vá bem em segurança, instituições e meio ambiente.</p></div>
+</div></div></section>
+
+<section id="regiao"><div class="wrap">
+<h2>Desenvolvimento humano: Brasil, Pará e Santarém</h2>
+<p>O potencial humano da região define a mão de obra disponível, o mercado consumidor e a qualidade do ambiente de negócios.</p>
+<div class="scroll"><table>
+<tr><th>IDHM 2010 (Atlas do Desenvolvimento Humano)</th><td>Brasil 0,727 · Pará 0,646 · Santarém 0,691 (faixa média)</td></tr>
+<tr><th>População de Santarém</th><td>331.942 habitantes (Censo 2022), a 3ª maior do Pará; estimativa de 357.311 em 2024</td></tr>
+<tr><th>PIB per capita de Santarém</th><td>R$ 26.154,78 (IBGE, 2023)</td></tr>
+<tr><th>Distâncias fluviais</th><td>Cerca de 750 km até Manaus e 950 km até Belém</td></tr>
+</table></div>
+<p class="nota" style="margin-top:10px">O IDHM de 2010 é o dado municipal mais recente do Atlas citado aqui; vale atualizar quando houver nova edição.</p>
+<div class="grid" style="margin-top:24px">
+<div class="box"><h3>Mão de obra</h3><p>Santarém é uma cidade grande para a região e centraliza o abastecimento do Oeste do Pará. Como o desenvolvimento humano do Pará está abaixo do nacional, a qualificação técnica é um gargalo. A Danser deve prever treinamento de tripulações e equipes de terminal.</p></div>
+<div class="box"><h3>Consumo</h3><p>O mercado local é modesto. A demanda que sustenta a operação vem do escoamento de grãos do Centro-Oeste e do abastecimento de cidades ribeirinhas, e não só do consumo dentro de Santarém.</p></div>
+<div class="box"><h3>Ambiente de negócios</h3><p>Santarém é a 2ª cidade do Pará para empreender, com destaque em Ambiente Regulatório. O contraponto é a posição menos favorável no Ranking de Competitividade dos Municípios, ligada a infraestrutura e qualificação.</p></div>
+</div></div></section>
+
+<section id="setor"><div class="wrap">
+<h2>Setor: logística fluvial para grãos e bioeconomia</h2>
+<p>O setor escolhido combina a logística e a agroindústria da soja e do milho com a bioeconomia amazônica de baixo impacto. A maior dificuldade na Bacia Amazônica é mover pessoas, produtos e serviços, e é aí que a Danser tem o que oferecer.</p>
+<div class="fact"><p>O Brasil usa menos de 50% de sua extensão hidroviária, segundo o estudo da Pezco Economics (2025) sobre a navegação interior brasileira.</p></div>
+<div class="fact"><p>Santarém fica na divisa entre o Rio Tapajós e a Bacia Amazônica: o acesso é a 6.992 km de navegação no Rio Amazonas e mais 2.080 km no Tapajós.</p></div>
+<div class="fact"><p>Segundo a Infra S.A. (ONTL, 2026), o Porto de Santarém se conecta às hidrovias do Tapajós e do Amazonas e a portos como Itacoatiara e Manaus.</p></div>
+</div></section>
+
+<section id="concorrencia"><div class="wrap">
+<h2>Aspectos-chave do setor: concorrência, demanda e apoio</h2>
+<div class="grid">
+<div class="box"><span class="tag">Estratégia e rivalidade</span><h3>Setor aberto, mas com grandes presentes</h3><p>A logística fluvial é pouco estruturada, o que deixa espaço para um operador organizado. O corredor do Tapajós, porém, já conta com terminais e tradings. A Cargill, por exemplo, opera a rota Miritituba–Santarém. A leitura do grupo é que a Danser ganha mais nos contêineres e na carga geral do que na disputa direta pelo granel. A BR-163 concorre pelo frete, e caminhoneiros resistem a perder carga para os rios.</p></div>
+<div class="box"><span class="tag">Condições da demanda</span><h3>Grãos de um lado, abastecimento do outro</h3><p>A demanda combina o escoamento de soja e milho do Centro-Oeste, o abastecimento do Oeste do Pará e das cidades ribeirinhas e compradores que exigem rastreabilidade. A seca cria picos e vales, com cobranças como a Taxa de Seca nos contêineres.</p></div>
+<div class="box"><span class="tag">Indústrias correlatas e de apoio</span><h3>Rede de parceiros</h3><p>Terminais portuários e estações de transbordo (Miritituba, Itaituba e Santarém), tradings, armadores regionais, a BR-163 como acesso por terra e a Antaq como reguladora. O parceiro brasileiro de navegação é a peça que liga a Danser a essa rede.</p></div>
+</div></div></section>
+
+<section id="porter"><div class="wrap">
+<h2>Diamante de Porter: o que sustenta a escolha</h2>
+<p>Escolha um dos seis elementos para ver como ele se aplica a Santarém.</p>
+<div class="diamond">
+<div id="tabs"></div>
+<div class="box" id="painel" role="tabpanel" aria-live="polite"></div>
+</div></div></section>
+
+<section id="eclectico"><div class="wrap">
+<h2>Paradigma Eclético: por que a Danser, e por que lá</h2>
+<div class="oli">
+<div><h3>Propriedade</h3><p>Know-how logístico em transporte de contêineres e cargas, em especial no setor fluvial. Opera desde 1982 no transporte intermodal na Europa (fluvial, ferroviário e rodoviário), com embarcações próprias e fretadas.</p></div>
+<div><h3>Localização</h3><p>Santarém dá acesso ao maior canal de transporte fluvial da América Latina e escoa grãos do Centro-Oeste, além de abastecer cidades ribeirinhas.</p></div>
+<div><h3>Internalização</h3><p>Modelo híbrido: a Danser mantém o controle do planejamento logístico, do rastreamento e da coordenação de rotas, e completa a capacidade com parceiros locais.</p></div>
+</div></div></section>
+
+<section id="proposta"><div class="wrap">
+<h2>O empreendimento proposto</h2>
+<div class="scroll"><table>
+<tr><th>Município</th><td>Santarém (PA)</td></tr>
+<tr><th>Empresa</th><td>Danser Group (Países Baixos)</td></tr>
+<tr><th>Países de atuação</th><td>Países Baixos, Bélgica, Alemanha e França</td></tr>
+<tr><th>Segmentos</th><td>Transporte fluvial de contêineres e cargas, terminais interiores, logística multimodal</td></tr>
+<tr><th>Entrada no Brasil</th><td>Barcaças porta-contêineres na rota Santarém–Manaus–Belém e terminal fluvial em Santarém, em joint venture com empresa brasileira de navegação</td></tr>
+</table></div>
+<p style="margin-top:20px">Por que joint venture: internalizar toda a operação exigiria investimentos altos em embarcações, infraestrutura e mão de obra, além de domínio da legislação e da navegação amazônica. O parceiro brasileiro traz esse conhecimento local e divide custos e riscos.</p>
+</div></section>
+
+<section id="imagens"><div class="wrap">
+<h2>Imagens da região</h2>
+<div class="grid" id="galeria"></div>
+</div></section>
+
+<section id="video"><div class="wrap">
+<h2>Entrevista em vídeo</h2>
+<p>Assista à entrevista diretamente nesta página.</p>
+<div class="video" id="videoBox">
+  <div id="videoPlaceholder" style="padding:24px">
+    <p style="margin:0">A entrevista do YouTube será exibida diretamente aqui quando o site estiver publicado em um endereço HTTP ou HTTPS.</p>
+  </div>
+</div>
+</div></section>
+
+<section id="roteiro"><div class="wrap">
+<h2>Roteiro de implantação</h2>
+<p>Proposta do grupo, em quatro etapas, para transformar a recomendação em operação.</p>
+<ol class="road">
+<li><h3>1. Diligência e parceria</h3><p>Avaliar a infraestrutura do Porto de Santarém e os investimentos de um terminal de contêineres, e escolher a empresa brasileira de navegação parceira.</p></li>
+<li><h3>2. Estrutura e licenciamento</h3><p>Constituir a joint venture, obter outorga e licenças (licenciamento digital e Sala do Empreendedor) e abrir o diálogo com as comunidades locais.</p></li>
+<li><h3>3. Operação piloto</h3><p>Começar com barcaças porta-contêineres na rota Santarém–Manaus, com rastreamento de cargas e plano para a vazante dos rios.</p></li>
+<li><h3>4. Expansão</h3><p>Estender a operação à rota até Belém, ampliar os serviços de carga e abastecimento e formar tripulações e equipes de terminal na região.</p></li>
+</ol></div></section>
+
+<section id="recomendacao" class="rec"><div class="wrap">
+<h2>Recomendação</h2>
+<p>Recomendamos que a Danser Group avance com a entrada em Santarém por meio de uma joint venture com uma empresa brasileira de navegação, começando por barcaças porta-contêineres na rota Santarém–Manaus–Belém e por um terminal fluvial.</p>
+<ol>
+<li>Verificar a infraestrutura portuária disponível e os investimentos necessários para um terminal especializado em contêineres.</li>
+<li>Selecionar o parceiro brasileiro, com conhecimento da legislação e da navegação amazônica.</li>
+<li>Manter sob controle direto o planejamento logístico, o rastreamento e as rotas.</li>
+<li>Planejar a operação para a vazante dos rios na seca amazônica e para a oscilação cambial.</li>
+<li>Atender à exigência de rastreabilidade dos compradores de grãos.</li>
+</ol>
+<p>Riscos a acompanhar: gargalos de infraestrutura e de qualificação, barreira regulatória, vazante dos rios e câmbio.</p>
+</div></section>
+
+<footer><div class="wrap fgrid">
+<p><strong>Projeto Brasil</strong><br>Trabalho da eletiva “Brasil: Ambiente de Negócios”, ESPM-SP, professor Silvio Luis de Vasconcellos. Autores: Christina Joy Helland, Iago Rafael Santos Vieira, Lucas Ribeiro de Oliveira e Bruno Issas Koch Ouriques.</p>
+<p><strong>Uso de IA</strong><br>O Claude foi usado para estruturar e redigir o site a partir do texto do trabalho do grupo, que revisou o resultado.</p>
+</div></footer>
+
+<script>
+/*
+  ==========================================
+  CONFIGURAÇÃO DE IMAGENS E VÍDEOS
+  ==========================================
+  Coloque os arquivos nas pastas "imagens" e "videos"
+  ao lado deste arquivo HTML.
+
+  Exemplos:
+  "imagens/capa-santarem.jpg"
+  "imagens/tapajos.jpg"
+  "videos/entrevista.mp4"
+
+  Para não usar um arquivo, deixe o caminho como "".
+*/
+var MIDIA = {
+  capa: "imagens/capa-santarem.jpg",
+  imagens: [
+    "imagens/orla-santarem.jpeg",
+    "imagens/rio-tapajos.jpeg",
+    "imagens/porto-santarem.jpeg",
+    "imagens/encontro-dos-rios.jpg",
+    "imagens/floresta-bioeconomia.jpeg",
+    "imagens/navegacao-fluvial.jpeg"
+  ],
+  youtube: "https://www.youtube.com/watch?v=gc7G7MZzVrw"
+};
+
+function obterIdYoutube(link) {
+  if (!link) return "";
+  try {
+    var url = new URL(link);
+    var host = url.hostname.replace("www.", "").toLowerCase();
+    if (host === "youtu.be") return url.pathname.split("/").filter(Boolean)[0] || "";
+    if (host === "youtube.com" || host === "m.youtube.com" || host === "youtube-nocookie.com") {
+      if (url.pathname === "/watch") return url.searchParams.get("v") || "";
+      var partes = url.pathname.split("/").filter(Boolean);
+      if (["embed", "shorts", "live"].includes(partes[0])) return partes[1] || "";
+    }
+  } catch (e) {}
+  return "";
+}
+
+var videoId = MIDIA.youtube !== "COLE_AQUI_O_LINK_DO_YOUTUBE"
+  ? obterIdYoutube(MIDIA.youtube)
+  : "";
+var videoBox = document.getElementById("videoBox");
+if (videoId && videoBox) {
+  videoBox.innerHTML = '<iframe src="https://www.youtube.com/embed/' +
+    encodeURIComponent(videoId) +
+    '" title="Entrevista em vídeo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="origin" allowfullscreen></iframe>';
+}
+
+var D=[
+["Condições de fatores","Rio Tapajós e Amazonas navegáveis, BR-163 e bioeconomia local. O gargalo está em infraestrutura e qualificação, o que a Danser pode suprir com seu know-how."],
+["Condições de demanda","Há escoamento de grãos do Centro-Oeste e abastecimento de cidades ribeirinhas. Os compradores exigem rastreabilidade, e o rastreamento de cargas é ponto forte da Danser."],
+["Indústrias correlatas e de apoio","Terminais portuários, tradings e armadores regionais formam a rede de apoio para a operação."],
+["Estratégia, estrutura e rivalidade","A logística fluvial é pouco estruturada, o que abre espaço para um operador organizado. A barreira regulatória leva à parceria com empresa local."],
+["Governo","Licenciamento digital e Sala do Empreendedor reduzem o custo e o tempo de abrir a operação."],
+["Acaso","A vazante dos rios na seca amazônica e o câmbio são riscos que fogem ao controle e precisam entrar no planejamento."]];
+var t=document.getElementById("tabs"),p=document.getElementById("painel"),NS="http://www.w3.org/2000/svg";
+var P=[[70,160],[330,160],[200,260],[200,60],[60,40],[340,40]],L=[["Condições","de fatores"],["Condições","de demanda"],["Indústrias","correlatas"],["Estratégia e","rivalidade"],["Governo",""],["Acaso",""]];
+var sv=document.createElementNS(NS,"svg");sv.setAttribute("viewBox","0 0 400 310");sv.setAttribute("role","tablist");sv.setAttribute("aria-label","Diamante de Porter");
+function el(n,a,par){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(par)par.appendChild(e);return e}
+[[3,0],[0,2],[2,1],[1,3],[3,2],[0,1]].forEach(function(l){el("line",{x1:P[l[0]][0],y1:P[l[0]][1],x2:P[l[1]][0],y2:P[l[1]][1],"class":"dl"},sv)});
+function sel(i){[].forEach.call(sv.querySelectorAll(".nd"),function(g,j){g.setAttribute("aria-selected",j==i)});p.innerHTML="<h3>"+D[i][0]+"</h3><p>"+D[i][1]+"</p>"}
+D.forEach(function(d,i){var g=el("g",{"class":"nd",role:"tab",tabindex:0,"aria-label":d[0]},sv);el("rect",{x:P[i][0]-56,y:P[i][1]-24,width:112,height:48,rx:12},g);var x=el("text",{x:P[i][0],y:P[i][1]-(L[i][1]?3:-4)},g);x.textContent=L[i][0];if(L[i][1]){var y=el("text",{x:P[i][0],y:P[i][1]+13},g);y.textContent=L[i][1]}g.onclick=function(){sel(i)};g.onkeydown=function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();sel(i)}}});
+t.appendChild(sv);
+var pr=document.getElementById("prog");
+function onS(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;var k=m>0?h.scrollTop/m:0;pr.style.transform="scaleX("+k+")";var r=document.getElementById("rio");r.firstChild.style.height=k*100+"%";r.lastChild.style.top=k*100+"%"}
+addEventListener("scroll",onS,{passive:true});onS();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var x=e.target;x.classList.add("in");io.unobserve(x);setTimeout(function(){x.style.setProperty("--d","0s")},1500)}})},{threshold:.12});
+document.querySelectorAll(".box,.oli>div,table,h2,.fact,.video,.slot,.road li,.stats .grid4>div").forEach(function(x){x.classList.add("rv");x.style.setProperty("--d",([].indexOf.call(x.parentNode.children,x)%4)*.1+"s");io.observe(x)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var b=e.target,n=+b.dataset.n,y=b.hasAttribute("data-y"),t0=null;co.unobserve(b);function f(ts){t0=t0||ts;var k=Math.min((ts-t0)/1600,1);k=1-Math.pow(1-k,3);var v=Math.round(n*k);b.textContent=y?v:v.toLocaleString("pt-BR");if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)})},{threshold:.5});
+document.querySelectorAll(".stats b").forEach(function(b){b.textContent="0";co.observe(b)});
+var hh=document.querySelector(".hero"),cores=["#12B36B","#7BD43A","#0A8F55","#4DBB2E"];
+for(var i=0;i<9;i++){var lf=document.createElement("i"),w=10+Math.random()*12;lf.className="leaf";lf.style.cssText="left:"+Math.random()*95+"%;width:"+w+"px;height:"+w*1.5+"px;animation-duration:"+(9+Math.random()*9)+"s;animation-delay:-"+Math.random()*12+"s;background:"+cores[i%4];hh.appendChild(lf)}
+var na=document.querySelectorAll("nav a"),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)na.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("section[id]").forEach(function(x){so.observe(x)});
+sel(0);
+var hb = document.getElementById("bgbtn");
+var hf = document.getElementById("bgfile");
+var hero = document.querySelector(".hero");
+
+function aplicarCapa(caminho) {
+  hero.style.setProperty("--hero-img", 'url("' + caminho.replace(/"/g, '%22') + '")');
+}
+
+if (MIDIA.capa) {
+  var capaTeste = new Image();
+  capaTeste.onload = function () { aplicarCapa(MIDIA.capa); };
+  capaTeste.onerror = function () {
+    console.warn("Imagem de capa não encontrada:", MIDIA.capa);
+  };
+  capaTeste.src = MIDIA.capa;
+}
+
+if (hb && hf) {
+  hb.addEventListener("click", function () { hf.click(); });
+  hf.addEventListener("change", function () {
+    var arquivo = hf.files && hf.files[0];
+    if (arquivo) aplicarCapa(URL.createObjectURL(arquivo));
+  });
+}
+var G = [
+  "Orla de Santarém",
+  "Rio Tapajós",
+  "Porto de Santarém",
+  "Encontro dos rios",
+  "Floresta e bioeconomia",
+  "Navegação fluvial"
+];
+var gg = document.getElementById("galeria");
+
+G.forEach(function (nome, indice) {
+  var figura = document.createElement("figure");
+  figura.className = "slot";
+
+  var entrada = document.createElement("input");
+  entrada.type = "file";
+  entrada.accept = "image/*";
+  entrada.id = "galeria-" + indice;
+
+  var rotulo = document.createElement("label");
+  rotulo.htmlFor = entrada.id;
+  rotulo.textContent = "Adicionar imagem";
+
+  var legenda = document.createElement("figcaption");
+  legenda.textContent = nome;
+
+  function aplicarImagem(caminho) {
+    rotulo.style.backgroundImage = 'url("' + caminho.replace(/"/g, '%22') + '")';
+    rotulo.textContent = "";
+    rotulo.classList.add("tem");
+  }
+
+  var caminhoConfigurado = MIDIA.imagens[indice];
+  if (caminhoConfigurado) {
+    var teste = new Image();
+    teste.onload = function () { aplicarImagem(caminhoConfigurado); };
+    teste.onerror = function () {
+      rotulo.textContent = "Imagem não encontrada — selecione uma foto";
+      rotulo.title = "Confira o caminho: " + caminhoConfigurado;
+    };
+    teste.src = caminhoConfigurado;
+  }
+
+  entrada.addEventListener("change", function (evento) {
+    var arquivo = evento.target.files && evento.target.files[0];
+    if (arquivo) aplicarImagem(URL.createObjectURL(arquivo));
+  });
+
+  figura.appendChild(entrada);
+  figura.appendChild(rotulo);
+  figura.appendChild(legenda);
+  gg.appendChild(figura);
+});
+</script>
+</body>
+</html>
